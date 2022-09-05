@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --ff-heading: 'Staatliches', sans-serif;
+    --ff-texting: 'Palanquin', sans-serif;
+    --fs-heading: 4rem;
+    --fs-texting: 1.7rem;
+    --fs-pictures: 2rem;
+    --bgc-body: #EFF1FF;
+    --bgc-header: #8E9AAF;
+    --bgc-tittle: #CBC0D3;
+    --bgc-menu: #FEEAFA;
+    --fc-pictures: #4A4E69;
+    --fc-heading: #FFFFFF;
+    --fc-texting: #23053A;
+}
+
+.page {
+    background-color: var(--bgc-body);
+}
+
+body {
+    font-size: 1.6rem;
+    width: 38rem;
+    margin: 0 auto;
+}
+
+header,
+header div,
+header div h2,
+.catalog p,
+.menu,
+.menu h2 {
+    display: flex;
+}
+
+header {
+    flex-direction: column;
+    background-color: var(--bgc-header);
+    width: 38rem;
+    height: 28rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+header img {
+    width: 14rem;
+    height: 14rem;
+    margin: 3.2rem 12rem;
+}
+
+header .tittle {
+    width: 38rem;
+    height: 5rem;
+    background: var(--bgc-tittle);
+}
+
+header div h2 {
+    width: fit-content;
+    line-height: 3.4rem;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    font-family: var(--ff-heading);
+    color: var(--fc-heading);
+    font-size: var(--fs-heading);
+    margin: 0.8rem 8.7rem;
+    text-transform: uppercase;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+#catalog {
+    padding: 2rem 3.2rem 2.8rem;
+    height: 100%;
+}
+
+.catalog p {
+    font-family: var(--ff-texting);
+    font-size: var(--fs-texting);
+    color: var(--fc-texting);
+    line-height: 1.9rem;
+    font-style: normal;
+    font-weight: 400;
+    width: 30.5rem;
+    height: 13rem;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 6.3rem;
+}
+
+.menu {
+    font-family: var(--ff-heading);
+    font-size: var(--fs-pictures);
+    color: var(--fc-pictures);
+    font-weight: 400;
+    line-height: 3.4rem;
+    letter-spacing: 0.05em;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 3.2rem;
+}
+
+.foto {
+    height: 25rem;
+}
+
+.foto2 {
+    height: 45rem;
+}
+
+.menu h2 {
+    position: absolute;
+    top: 1.6rem;
+    right: 1.6rem;
+    line-height: 5rem;
+    border-radius: 4rem;
+    background-color: var(--bgc-menu);
+    padding: 0 2.3rem;
+}
