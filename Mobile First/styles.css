@@ -74,7 +74,7 @@ header div h2 {
     text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
 }
 
-#catalog {
+.catalog {
     padding: 2rem 3.2rem 2.8rem;
     height: 100%;
 }
@@ -123,10 +123,64 @@ p {
     padding: 0 2.3rem;
 }
 
+.foto img{
+    transition: transform 200ms;
+}
+
+.foto img:hover {
+    transform: scale(1.1);
+}
+
+.foto2 img{
+    transition: transform 200ms;
+}
+
+.foto2 img:hover {
+    transform: scale(1.1);
+}
+
+
+@media screen and (max-width: 700px) {
+    #ft3, #ft6, footer {
+        display: none;
+    }
+
+    
+}
+
+header{
+    animation: topdown 700ms;
+}
+
+.gap{
+    animation: downtop 700ms 350ms reverse;
+}
+
+@keyframes topdown{
+   0%{
+    opacity: 0; 
+    transform: translateY(-15);
+} 
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes downtop {
+    100%{
+        opacity: 0; 
+        transform: translateY(15);
+    } 
+    
+}
+
+
 @media screen and (min-width: 700px) {
     body {
         margin: 0;
-        max-width: 128rem;
+        width: 128rem;
     }
     .catalog .gap .menu .legenda {
         display: none;
@@ -157,16 +211,13 @@ p {
         line-height: 3rem;
         margin: 0;
     }
-    header {
-        width: 37.7rem;
-    }
+    
     .catalog {
         background-color: #FFFFFF;
         height: 72rem;
         width: 90rem;
     }
     .menu {
-        display: grid;
         max-height: 35rem;
         max-width: 22rem;
         margin: 0;
@@ -178,7 +229,7 @@ p {
         grid-gap: 1rem;
         height: 53.2rem;
         width: 72.4rem;
-        margin: 6.4rem 8.1rem 12.4rem 9.8rem;
+        margin: 6.4rem 8.1rem 0rem 30rem;
     }
     .foto {
         height: 15rem;
@@ -200,14 +251,14 @@ p {
     #ft2 {
         grid-column-start: 2;
         grid-column-end: 3;
-        grid-row-start: -3;
-        grid-row-end: -2;
+        grid-row-start: 1;
+        grid-row-end: 2;
     }
     #ft3 {
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: -3;
-        grid-row-end: -2;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
     }
     #ft4 {
         grid-column-start: 1;
@@ -225,6 +276,22 @@ p {
         grid-column-start: 3;
         grid-column-end: 4;
         grid-row-start: 2;
-        grid-row-end: -3;
+        grid-row-end: 4;
+    }
+
+    footer{
+        display: flex;
+        width: 72.4rem;
+        height: 3rem;
+        margin: 0rem 8.1rem 0 47rem;
+
+    }
+
+    footer p{
+        width: 72.4rem;
+        height: 3rem;
+        color: #4A4E69;
+        text-align: center;
+
     }
 }
